@@ -111,8 +111,7 @@ function setup()
   rope = new Rope(7,{x:40,y:30});
 
 
-  rope2 = new Rope(5,{x:370,y:40});
-  rope3 = new Rope(7,{x:400,y:225});
+/// CRIAR OBJETOS 
 
   ground = new Ground(200,690,600,20);
   blink.frameDelay = 20;
@@ -130,9 +129,8 @@ function setup()
   Matter.Composite.add(rope.body,fruit);
 
   fruit_con = new Link(rope,fruit);  
-  fruit_con_2 = new Link(rope2,fruit);
-  
-  fruit_con_3 = new Link(rope3,fruit);
+
+  // CRIAR 2  CONHEXÕES
 
   rectMode(CENTER);
   ellipseMode(RADIUS);
